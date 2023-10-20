@@ -67,9 +67,51 @@
         </tr>
 
         <tr>
-          
+          <td><a href="References">References</td>
         </tr>
       </table>
+
+      <p id="date&time"></p>
+
+      <script>
+
+        //Javascript to display the date and time on my webpage
+
+        const d = new Date();
+        document.getElementByld("date&time").innerHTML = d;
+        
+      </script>
+
+      <!DOCTYPE html>
+      <html>
+    <head>
+      <title>Change Button Colour</title>
+    </head>
+      <body>
+      <button id="color button">Click me to chnage colour</button>
+        <script>
+          // Get a reference to the button element
+          var button= document.getElementByld("ColorButton");
+
+          //Function to change the button color
+          function changeColor(){
+            //Generate a random color (hexadecimal)
+            var randomColor= "#" + Math.floor(Math.random()*16777215).toString(16);
+
+            //Set the button's background color to the random color
+            button.style.backgroundColor = randomColor;
+          }
+
+          //Add a click event listener to the button
+          button.addEventListener("click", changeColor);
+        </script>
+      </body>
+      </html>
+
+          
+   
+        
+      
 
 
 
